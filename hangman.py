@@ -115,7 +115,8 @@ def game_main(default_word="mississippi"):
             if re.search("[n]", usr_input):
                 clear_term()
                 print("Quitting Hangman...")
-                break
+                quit()
+                # break
             else:
                 clear_term()
                 default_word = input("New secret word or phrase: ")
